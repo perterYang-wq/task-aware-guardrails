@@ -1,0 +1,46 @@
+PASS  table tab1_three_suites_three_arms (tex/csv/md)      
+PASS  table tab2_vs_tshield (tex/csv/md)                   
+PASS  table tab4_rule_three_arms (tex/csv/md)              
+PASS  table tab6_deny_attribution (tex/csv/md)             
+PASS  table app_tab3_recipe_ladder (tex/csv/md)            
+PASS  table app_tab5_probe_matrix (tex/csv/md)             
+PASS  table app_tab7_adaptive (tex/csv/md)                 
+PASS  table app_tab8_posthoc_patch (tex/csv/md)            
+PASS  table app_tab9_cost (tex/csv/md)                     
+PASS  table app_tab10_seven_axis (tex/csv/md)              
+PASS  figure fig1_dinj_pra_acb (pdf/png/csv)               
+PASS  figure fig4_recipe_ladder (pdf/png/csv)              
+PASS  figure fig6_probe_heatmap (pdf/png/csv)              
+PASS  figure app_fig3_suites_arms (pdf/png/csv)            
+PASS  figure app_fig5_seven_axis (pdf/png/csv)             
+PASS  figure app_fig7_routing (pdf/png/csv)                
+PASS  figure app_fig8_cost_frontier (pdf/png/csv)          
+PASS  figure app_fig9_patch_before_after (pdf/png/csv)     
+PASS  figure app_fig10_three_evidence (pdf/png/csv)        
+PASS  latex tab1_three_suites_three_arms balanced + booktabs 
+PASS  latex tab2_vs_tshield balanced + booktabs            
+PASS  latex tab4_rule_three_arms balanced + booktabs       
+PASS  latex tab6_deny_attribution balanced + booktabs      
+PASS  latex app_tab3_recipe_ladder balanced + booktabs     
+PASS  latex app_tab5_probe_matrix balanced + booktabs      
+PASS  latex app_tab7_adaptive balanced + booktabs          
+PASS  latex app_tab8_posthoc_patch balanced + booktabs     
+PASS  latex app_tab9_cost balanced + booktabs              
+PASS  latex app_tab10_seven_axis balanced + booktabs       
+PASS  tab1 slack M1 ASR = 0/42                             
+PASS  tab1 travel M1 ASR = 1/40                            
+PASS  tab1 slack M1 false block = 4/123                    
+PASS  tab4 rule read-type = 12/21                          
+PASS  tab4 rule write-type = 0/21                          
+PASS  tab4 M1+rule ASR p is n/a                            
+PASS  tab6 sets = json (6/4/20/2)                          
+PASS  fig1b 0.883->17.0                                    
+PASS  fig1b 0.856->21.4                                    
+PASS  fig1b 0.794->41.5                                    
+PASS  fig4 ladder = 50.0/61.9 ... 0.0/66.7                 
+PASS  fig6 15 cells, 3 seeds x 5 variants                  
+PASS  fig6 verdict counts (DENY 5 / ALLOW 10)              deny=5 allow=10
+PASS  anchor inputs untouched (mtime < 23:20)              
+INFO  runs/auto/state.json mtime = 2026-11-03 00:09:27.344894 (concurrent mechanism-probe run appended mechanism_probe_v41flash; not touched by this task)
+
+TOTAL pass=43 fail=0

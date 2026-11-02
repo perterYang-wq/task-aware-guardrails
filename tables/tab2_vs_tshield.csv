@@ -1,0 +1,5 @@
+arm,asr_num,asr_den,asr_pct,util_num,util_den,util_pct,deny,checked,lat_mean_ms,lat_p95_ms,extra_vram_gb,p_mcnemar
+M1,0,42,0.0,14,21,66.7,26,411,251.0,265.0,4.1,
+Task-Shield 7B,0,42,0.0,5,21,23.8,222,331,574.0,610.0,0.0,0.0039
+ToolSafe,,,,,,,,,,,,not reproduced
+String rule gamma=3,13,42,31.0,1,21,4.8,154,408,0.0012,0.0012,0.0,

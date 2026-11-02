@@ -1,0 +1,15 @@
+{
+  "step": 2,
+  "script": "scripts/travel_write_tools.py",
+  "inputs": [
+    "results/e2e/travel/m2_HBnt_s0_inj0-1",
+    "results/e2e/travel/m2_HB_s0_calls_inj0-1"
+  ],
+  "outputs": [
+    "reports/travel_write_tools.md",
+    "probes/travel_write_tools.json"
+  ],
+  "rc": 0,
+  "conclusion": "A",
+  "ts": "2026-11-02 16:35:13"
+}

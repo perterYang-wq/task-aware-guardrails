@@ -1,0 +1,34 @@
+{
+  "pg2_86m": {
+    "ok": true,
+    "ms": 2195,
+    "labels": {
+      "0": "BENIGN",
+      "1": "MALICIOUS"
+    },
+    "n_params": 278810882,
+    "sample_prob": [
+      0.0048,
+      0.9952
+    ]
+  },
+  "qwen1.5b_base": {
+    "ok": true,
+    "ms": 1335,
+    "model_type": "qwen2",
+    "n_params": 1543714304,
+    "vocab": 151665
+  },
+  "lora_m2_HB_s0": {
+    "ok": true,
+    "ms": 2468,
+    "adapter": "m2_HB_s0",
+    "out": "(4) Response"
+  },
+  "lora_m2_HBnt_s0": {
+    "ok": true,
+    "ms": 1934,
+    "adapter": "m2_HBnt_s0",
+    "out": "(无输入)"
+  }
+}

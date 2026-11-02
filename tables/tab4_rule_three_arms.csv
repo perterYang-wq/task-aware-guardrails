@@ -1,0 +1,4 @@
+arm,asr_num,asr_den,asr_pct,write_num,write_den,write_pct,read_num,read_den,read_pct,util_num,util_den,util_pct,fb_num,fb_den,fb_pct,p_asr,p_util
+String rule only,12,42,28.6,0,21,0.0,12,21,57.1,1,21,4.8,55,129,42.6,p=0.0005 (McNemar),--
+"M1, model only",0,42,0.0,0,21,0.0,0,21,0.0,14,21,66.7,4,123,3.3,reference,reference
+M1 $+$ string rule,0,42,0.0,0,21,0.0,0,21,0.0,1,21,4.8,58,129,45.0,n/a (no discordant pairs),p=0.0002 (McNemar)

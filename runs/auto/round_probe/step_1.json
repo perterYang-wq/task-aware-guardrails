@@ -1,0 +1,16 @@
+{
+  "step": 1,
+  "script": "probes/probe_runner_cpu.py",
+  "inputs": [
+    "/data/projects/guardrails/results/e2e/travel/m2_HB_s123_b8_inj0-1/trace.jsonl",
+    "guard/adapters/{m2_HB_s0,m2_HB_s42,m2_HB_s123}"
+  ],
+  "outputs": [
+    "/data/projects/guardrails/probes/probe_user_task_4.json",
+    "/data/projects/guardrails/reports/probe_user_task_4.md"
+  ],
+  "rc": 0,
+  "consistency_ok": true,
+  "elapsed_s": 191.3,
+  "ts": "2026-11-02 16:31:37"
+}

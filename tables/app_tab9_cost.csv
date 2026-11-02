@@ -1,0 +1,5 @@
+arm,suite,lat_mean_p95,device,extra_vram_gb,acb,false_block
+M1,slack,251/265,GPU fp16,4.1,0.9811,3.3
+Task-Shield,slack,574/610,GPU fp16,0.0,0.518,60.7
+String rule,slack,0.0012/0.0012,CPU,0.0,,42.6
+0.5B,travel,1461.3/4182.4,CPU,,0.8491,21.2

@@ -1,0 +1,4 @@
+guard,asr_num,asr_den,util_num,util_den,p_fisher,flips
+static,1,20,2,20,reference,--
+meta,3,20,3,20,p=0.605,"2 DENY$\to$ALLOW (t1, t19); 1 ALLOW$\to$DENY (t4)"
+obfusc,0,20,4,20,p=1.000,no flip; t4 becomes blocked

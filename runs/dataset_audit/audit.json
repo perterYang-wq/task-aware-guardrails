@@ -1,0 +1,296 @@
+{
+  "diag": {
+    "n": 2370,
+    "fields": [
+      "args",
+      "attack_sensitive",
+      "current_action",
+      "gamma",
+      "hist_cut_full",
+      "hist_cut_noinj",
+      "hist_full",
+      "hist_last1",
+      "hist_last3",
+      "hist_noinj",
+      "hist_none",
+      "in_attacked_scenario",
+      "inj_span_chars",
+      "injection_exposed",
+      "injection_task",
+      "instruction",
+      "label",
+      "n_seg",
+      "n_seg_clean",
+      "n_val_arg",
+      "n_val_in_evidence",
+      "n_val_in_payload",
+      "provenance",
+      "scenario_id",
+      "sid",
+      "step_idx",
+      "suite",
+      "task_id",
+      "tool"
+    ],
+    "suites": {
+      "banking": 377,
+      "travel": 1069,
+      "slack": 924
+    },
+    "labels": {
+      "ALLOW": 2174,
+      "DENY": 159,
+      "REVIEW": 37
+    },
+    "provenance": {
+      "in_neither": 471,
+      "in_evidence": 1089,
+      "no_strong_arg": 691,
+      "in_payload_only": 119
+    },
+    "attack_scen": 87,
+    "all_scen": 198,
+    "tasks": 57,
+    "missing": {
+      "instruction": 0,
+      "history": 2370,
+      "current_action": 0,
+      "tool": 0,
+      "args": 149
+    },
+    "views": {
+      "has_noinj": 1912,
+      "noinj_differs": 1071
+    }
+  },
+  "label_consistency": {
+    "deny_total": 159,
+    "deny_in_attacked_scen": 159,
+    "deny_with_inj_payload": 159,
+    "allow_in_attacked_scen": 1906,
+    "note": "DENY 全部应落在受攻击场景；ALLOW 在受攻击场景内也应存在（合法调用）"
+  },
+  "duplicates": {
+    "unique_sig": 397,
+    "dup_sig": 192,
+    "dup_rows": 1973,
+    "cross_label_dup": 7
+  },
+  "leakage": {
+    "hardneg_rows": 254,
+    "hardneg_tasks": 32,
+    "hardneg_injection_tasks": [
+      "injection_task_0",
+      "injection_task_1",
+      "injection_task_2",
+      "injection_task_3",
+      "injection_task_4",
+      "injection_task_5",
+      "injection_task_6",
+      "injection_task_7",
+      "injection_task_8"
+    ],
+    "diag_tasks": 57,
+    "overlap_all": [
+      "banking/user_task_0",
+      "banking/user_task_10",
+      "banking/user_task_12",
+      "banking/user_task_13",
+      "banking/user_task_14",
+      "banking/user_task_15",
+      "banking/user_task_2",
+      "banking/user_task_3",
+      "banking/user_task_4",
+      "banking/user_task_5",
+      "banking/user_task_6",
+      "banking/user_task_8",
+      "slack/user_task_0",
+      "slack/user_task_1",
+      "slack/user_task_10",
+      "slack/user_task_11",
+      "slack/user_task_12",
+      "slack/user_task_13",
+      "slack/user_task_14",
+      "slack/user_task_15",
+      "slack/user_task_16",
+      "slack/user_task_17",
+      "slack/user_task_18",
+      "slack/user_task_19",
+      "slack/user_task_2",
+      "slack/user_task_20",
+      "slack/user_task_3",
+      "slack/user_task_4",
+      "slack/user_task_5",
+      "slack/user_task_6",
+      "slack/user_task_8",
+      "slack/user_task_9"
+    ],
+    "overlap_attack": [
+      "banking/user_task_0",
+      "banking/user_task_10",
+      "banking/user_task_12",
+      "banking/user_task_13",
+      "banking/user_task_14",
+      "banking/user_task_2",
+      "banking/user_task_8",
+      "slack/user_task_0",
+      "slack/user_task_1",
+      "slack/user_task_10",
+      "slack/user_task_12",
+      "slack/user_task_13",
+      "slack/user_task_14",
+      "slack/user_task_15",
+      "slack/user_task_16",
+      "slack/user_task_17",
+      "slack/user_task_18",
+      "slack/user_task_19",
+      "slack/user_task_2",
+      "slack/user_task_20",
+      "slack/user_task_3",
+      "slack/user_task_5",
+      "slack/user_task_6",
+      "slack/user_task_9"
+    ],
+    "note": "重叠 ≠ 泄漏：训练用的是调用级标签，但同一 task 出现在两侧会抬高 in-dist 分数",
+    "pab_rows": 1219,
+    "pab_tasks": 0
+  },
+  "legacy_traces": {
+    "runs/ad_bank2_trace.jsonl": {
+      "calls": 377,
+      "scenarios": 160,
+      "tasks": 16,
+      "injection_tasks": 9,
+      "fields": [
+        "args",
+        "current_action",
+        "history",
+        "history_full",
+        "injection_task",
+        "instruction",
+        "step",
+        "suite",
+        "tool",
+        "ts",
+        "user_task"
+      ],
+      "has_env_state": false,
+      "missing": {
+        "instruction": 0,
+        "history": 0,
+        "current_action": 0,
+        "tool": 0,
+        "args": 44
+      }
+    },
+    "runs/ad_ws2_trace.jsonl": {
+      "calls": 643,
+      "scenarios": 362,
+      "tasks": 26,
+      "injection_tasks": 14,
+      "fields": [
+        "args",
+        "current_action",
+        "history",
+        "history_full",
+        "injection_task",
+        "instruction",
+        "step",
+        "suite",
+        "tool",
+        "ts",
+        "user_task"
+      ],
+      "has_env_state": false,
+      "missing": {
+        "instruction": 0,
+        "history": 0,
+        "current_action": 0,
+        "tool": 0,
+        "args": 98
+      }
+    }
+  },
+  "e2e_traces": {
+    "slack": {
+      "exists": true,
+      "n": 126,
+      "clean": 21,
+      "attack": 105,
+      "utility_clean": 0.619,
+      "asr": 0.3905,
+      "inj_tasks": [
+        "injection_task_1",
+        "injection_task_2",
+        "injection_task_3",
+        "injection_task_4",
+        "injection_task_5"
+      ],
+      "fields": [
+        "agent_failure",
+        "attack_call_generated",
+        "attack_call_strong",
+        "attack_success",
+        "completion_tokens",
+        "contract_hits",
+        "gate",
+        "injection_exposed",
+        "injection_present",
+        "injection_step_idx",
+        "injection_task",
+        "n_executed",
+        "n_llm_errors",
+        "n_steps",
+        "prompt_tokens",
+        "security",
+        "user_task",
+        "utility"
+      ],
+      "has_env_state": true
+    },
+    "travel": {
+      "exists": true,
+      "n": 159,
+      "clean": 20,
+      "attack": 139,
+      "utility_clean": 0.25,
+      "asr": 0.1871,
+      "inj_tasks": [
+        "injection_task_0",
+        "injection_task_1",
+        "injection_task_2",
+        "injection_task_3",
+        "injection_task_4",
+        "injection_task_5",
+        "injection_task_6"
+      ],
+      "fields": [
+        "agent_failure",
+        "attack_call_generated",
+        "attack_call_strong",
+        "attack_success",
+        "completion_tokens",
+        "gate",
+        "injection_exposed",
+        "injection_present",
+        "injection_step_idx",
+        "injection_task",
+        "n_executed",
+        "n_llm_errors",
+        "n_steps",
+        "prompt_tokens",
+        "security",
+        "user_task",
+        "utility"
+      ],
+      "has_env_state": true
+    },
+    "banking": {
+      "exists": false
+    }
+  },
+  "scenario_manifest": {
+    "path": "runs/dataset_audit/scenario_manifest.jsonl",
+    "rows": 445
+  }
+}

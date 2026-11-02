@@ -1,0 +1,150 @@
+{
+  "test_split": {
+    "n": 335,
+    "task_groups": 25,
+    "source": "data/pab_rd_splits.json::test（冻结）",
+    "groups_sample": [
+      "banking/user_task_13",
+      "banking/user_task_3",
+      "banking/user_task_6",
+      "slack/user_task_1",
+      "slack/user_task_10"
+    ]
+  },
+  "arms": {
+    "M0": {
+      "tag": "m2_HBnt_s0",
+      "task_aware": false,
+      "cold_start_s": 1.59,
+      "infer_s": 23.0,
+      "acc": 0.7851,
+      "macro_f1": 0.7836,
+      "per_class": {
+        "ALLOW": {
+          "P": 0.6087,
+          "R": 0.7216,
+          "F1": 0.6604,
+          "support": 97
+        },
+        "REVIEW": {
+          "P": 0.8739,
+          "R": 0.7761,
+          "F1": 0.8221,
+          "support": 134
+        },
+        "DENY": {
+          "P": 0.8812,
+          "R": 0.8558,
+          "F1": 0.8683,
+          "support": 104
+        }
+      },
+      "confusion": {
+        "ALLOW|ALLOW": 70,
+        "ALLOW|REVIEW": 15,
+        "ALLOW|DENY": 12,
+        "REVIEW|ALLOW": 30,
+        "REVIEW|REVIEW": 104,
+        "REVIEW|DENY": 0,
+        "DENY|ALLOW": 15,
+        "DENY|REVIEW": 0,
+        "DENY|DENY": 89
+      },
+      "parse_fail": 0,
+      "review_handling": {
+        "n": 134,
+        "to_ALLOW": 30,
+        "to_DENY": 0,
+        "to_REVIEW": 104
+      },
+      "latency_ms": {
+        "mean": 339.8,
+        "p50": 339.9,
+        "p95": 355.1,
+        "n": 150
+      },
+      "throughput_bs8": 10.88,
+      "gpu_peak_mib": 4042.0,
+      "tokens": {
+        "mean": 550.0,
+        "p50": 564,
+        "p95": 802,
+        "max": 885,
+        "over_1024": 0,
+        "over_512": 196
+      },
+      "trunc512": {
+        "loses_action": 42,
+        "loses_args": 56,
+        "loses_task": 335
+      }
+    },
+    "M1": {
+      "tag": "m2_HB_s0",
+      "task_aware": true,
+      "cold_start_s": 1.39,
+      "infer_s": 24.1,
+      "acc": 0.8537,
+      "macro_f1": 0.8501,
+      "per_class": {
+        "ALLOW": {
+          "P": 0.75,
+          "R": 0.7423,
+          "F1": 0.7461,
+          "support": 97
+        },
+        "REVIEW": {
+          "P": 0.8647,
+          "R": 0.8582,
+          "F1": 0.8614,
+          "support": 134
+        },
+        "DENY": {
+          "P": 0.934,
+          "R": 0.9519,
+          "F1": 0.9429,
+          "support": 104
+        }
+      },
+      "confusion": {
+        "ALLOW|ALLOW": 72,
+        "ALLOW|REVIEW": 18,
+        "ALLOW|DENY": 7,
+        "REVIEW|ALLOW": 19,
+        "REVIEW|REVIEW": 115,
+        "REVIEW|DENY": 0,
+        "DENY|ALLOW": 5,
+        "DENY|REVIEW": 0,
+        "DENY|DENY": 99
+      },
+      "parse_fail": 0,
+      "review_handling": {
+        "n": 134,
+        "to_ALLOW": 19,
+        "to_DENY": 0,
+        "to_REVIEW": 115
+      },
+      "latency_ms": {
+        "mean": 336.7,
+        "p50": 333.9,
+        "p95": 354.7,
+        "n": 150
+      },
+      "throughput_bs8": 10.3,
+      "gpu_peak_mib": 4128.0,
+      "tokens": {
+        "mean": 602.0,
+        "p50": 652,
+        "p95": 867,
+        "max": 957,
+        "over_1024": 0,
+        "over_512": 215
+      },
+      "trunc512": {
+        "loses_action": 122,
+        "loses_args": 136,
+        "loses_task": 335
+      }
+    }
+  }
+}

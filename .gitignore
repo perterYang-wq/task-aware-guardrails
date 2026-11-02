@@ -1,0 +1,33 @@
+# --- 体积大 / 可重建：不入库 ---
+# AgentDojo / ToolSafe 的上游克隆（562 MB）
+repos/
+
+# e2e 逐调用原始记录与 trace（226 MB）
+results/
+
+# 评测集与派生数据（36 MB，含 20 MB+ 的 jsonl）
+data/
+
+# LoRA 权重（4.5 GB）：只保留 sha256 清单与冻结说明
+guard/adapters/
+
+# 冻结归档（60 MB 快照 + 5 MB tar.gz）：清单与哈希在 frozen/ 保留
+frozen/P1M2_20261101/
+frozen/*.tar.gz
+
+# 中间图（交付图在 final_figures/）
+figures/
+
+# --- 运行时产物 ---
+runs/**/logs/
+*.log
+*.jsonl
+runs/auto/state.json.bak*
+
+# --- 杂项 ---
+__pycache__/
+*.py[cod]
+.DS_Store
+*.swp
+scripts/*.bak*
+*.bak_*

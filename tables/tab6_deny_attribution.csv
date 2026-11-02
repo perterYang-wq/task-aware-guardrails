@@ -1,0 +1,4 @@
+arm,deny_total,payload,non_payload,non_payload_pct,intersection,m1_only,m0_only,robust,p_mcnemar
+M1,34,8,26,76.5,,,,,
+M0,27,5,22,81.5,,,,,
+set-difference,,,,,20,6,4,2,0.7539

@@ -1,0 +1,5 @@
+arm,asr_num,asr_den,asr_pct,util_num,util_den,util_pct,fb_num,fb_den,fb_pct,p_asr,p_util,test
+E0 (no guard),21,42,50.0,13,21,61.9,,,,$<$0.001,p=1.000,Fisher / McNemar
+S (standard SFT),5,42,11.9,10,21,47.6,22,116,19.0,p=0.0551,p=0.125,Fisher / McNemar
+M0 (task-blind recipe),4,42,9.5,7,21,33.3,13,113,11.5,p=0.116,p=0.0156,Fisher / McNemar
+M1 (full recipe),0,42,0.0,14,21,66.7,4,123,3.3,reference,reference,--

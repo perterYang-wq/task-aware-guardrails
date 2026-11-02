@@ -1,0 +1,27 @@
+{
+  "step": 4,
+  "script": "(decision only)",
+  "inputs": [
+    "probes/probe_user_task_4.json",
+    "probes/travel_write_tools.json"
+  ],
+  "outputs": [
+    "reports/retrain_plan.md"
+  ],
+  "hit_rows": [
+    1,
+    6
+  ],
+  "applied_row": 6,
+  "decision": "no_retrain",
+  "budget_h": 0,
+  "reason": "P2 与 P4 在 seed123 上同时保持 ALLOW；四项扰动均未改变判定",
+  "alternatives": [
+    {
+      "row": 1,
+      "action": "补 travel 正例 + 收件人授权负例",
+      "budget_h": 1.5
+    }
+  ],
+  "ts": "2026-11-02 16:36:30"
+}

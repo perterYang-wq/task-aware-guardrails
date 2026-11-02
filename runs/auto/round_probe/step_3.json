@@ -1,0 +1,21 @@
+{
+  "step": 3,
+  "script": "/tmp/s3.py (inline)",
+  "inputs": [
+    "runs/auto/state.json"
+  ],
+  "outputs": [
+    "runs/auto/state.json",
+    "runs/auto/round_probe/state_update.json"
+  ],
+  "rc": 0,
+  "keys_created": [
+    "C2",
+    "C6",
+    "B7",
+    "B8",
+    "probe"
+  ],
+  "keys_untouched": 9,
+  "ts": "2026-11-02 16:37:26"
+}

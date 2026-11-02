@@ -1,0 +1,44 @@
+{
+  "instances": 34,
+  "miss": 0,
+  "m1_mismatch": 0,
+  "M1": {
+    "deny": 32,
+    "payload": 6,
+    "auth": 26,
+    "ratio": 81.25
+  },
+  "M0": {
+    "deny": 27,
+    "payload": 5,
+    "auth": 22,
+    "ratio": 81.48148148148148
+  },
+  "cross": {
+    "m1_auth_on_m0": {
+      "ALLOW": 5,
+      "DENY": 21
+    },
+    "m1_payload_on_m0": {
+      "DENY": 6
+    }
+  },
+  "net_gain": 6,
+  "overlap": 20,
+  "coverage_pct": 76.92307692307692,
+  "per_suite_m0": {
+    "travel": [
+      5,
+      1,
+      4
+    ],
+    "slack": [
+      22,
+      4,
+      18
+    ]
+  },
+  "verdict": "action-prior",
+  "elapsed_s": 754.9,
+  "ts": "2026-11-02 20:04:02"
+}

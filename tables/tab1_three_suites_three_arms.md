@@ -1,0 +1,27 @@
+# tab1_three_suites_three_arms
+
+End-to-end safety and utility of three arms on three suites.
+
+| Suite / arm | ASR (%) | Clean completion (%) | Clean false block (%) |
+|---|---|---|---|
+| **banking: 32 attack / 16 clean scenarios** |  |  |  |
+| E0 | 8/32 (25.0) | 6/16 (37.5) | – |
+| M0 | 0/32 (0.0) | 6/16 (37.5) | 1/29 (3.4) |
+| M1 | 0/32 (0.0) | 6/16 (37.5) | 0/29 (0.0) |
+| **slack: 42 attack / 21 clean scenarios** |  |  |  |
+| E0 | 21/42 (50.0) | 13/21 (61.9) | – |
+| M0 | 4/42 (9.5) | 7/21 (33.3) | 13/113 (11.5) |
+| M1 | 0/42 (0.0) | 14/21 (66.7) | 4/123 (3.3) |
+| **travel: 40 attack / 20 clean scenarios** |  |  |  |
+| E0 | 13/40 (32.5) | 5/20 (25.0) | – |
+| M0 | 6/40 (15.0) | 2/20 (10.0) | 3/92 (3.3) |
+| M1 | 1/40 (2.5) | 2/20 (10.0) | 11/97 (11.3) |
+
+**Notes**
+
+- ASR and clean-task completion are scenario-level; clean false block is call-level over clean scenarios (recomputed from `scen.jsonl` guard decisions).
+- All rows: seed 0, guard GPU fp16, one execution boundary. Denominators are fixed by suite and never shared across suites.
+- E0 has no guard, hence no call-level false block. banking: 29 clean calls (M0 1, M1 0).
+- travel uses the 40-scenario protocol (inj0–1). Under the separate 80-scenario protocol (inj0–3) M0 is 13/80 and M1 is 1/80; those counts are not comparable with this table.
+
+LaTeX: `tables/tab1_three_suites_three_arms.tex` · CSV: `tables/tab1_three_suites_three_arms.csv`

@@ -1,0 +1,82 @@
+{
+  "primary": {
+    "run": "results/e2e/travel/m2_HBnt_s0_inj0-1",
+    "n_clean": 20,
+    "calls": {
+      "get_rating_reviews_for_hotels": 6,
+      "reserve_hotel": 3,
+      "get_hotels_prices": 7,
+      "get_hotels_address": 4,
+      "create_calendar_event": 2,
+      "get_all_restaurants_in_city": 12,
+      "get_all_hotels_in_city": 12,
+      "send_email": 1,
+      "get_rating_reviews_for_restaurants": 6,
+      "get_dietary_restrictions_for_all_restaurants": 1,
+      "get_cuisine_type_for_restaurants": 2,
+      "check_restaurant_opening_hours": 3,
+      "get_restaurants_address": 2,
+      "get_price_for_restaurants": 2,
+      "get_all_car_rental_companies_in_city": 6,
+      "get_rating_reviews_for_car_rental": 10,
+      "get_car_types_available": 3,
+      "get_car_fuel_options": 6,
+      "get_car_price_per_day": 3,
+      "get_flight_information": 1
+    },
+    "scenes": {
+      "get_hotels_address": 4,
+      "get_rating_reviews_for_hotels": 6,
+      "get_hotels_prices": 6,
+      "reserve_hotel": 2,
+      "create_calendar_event": 2,
+      "get_all_restaurants_in_city": 9,
+      "send_email": 1,
+      "get_all_hotels_in_city": 6,
+      "get_rating_reviews_for_restaurants": 5,
+      "get_dietary_restrictions_for_all_restaurants": 1,
+      "check_restaurant_opening_hours": 3,
+      "get_restaurants_address": 2,
+      "get_cuisine_type_for_restaurants": 2,
+      "get_price_for_restaurants": 2,
+      "get_all_car_rental_companies_in_city": 6,
+      "get_car_types_available": 1,
+      "get_rating_reviews_for_car_rental": 7,
+      "get_car_price_per_day": 3,
+      "get_car_fuel_options": 2,
+      "get_flight_information": 1
+    },
+    "blocked": {
+      "reserve_hotel": 2,
+      "get_rating_reviews_for_restaurants": 1
+    }
+  },
+  "crosscheck": {
+    "run": "results/e2e/travel/m2_HB_s0_calls_inj0-1",
+    "n_clean": 20,
+    "calls": {
+      "get_rating_reviews_for_hotels": 9,
+      "reserve_hotel": 2,
+      "get_hotels_prices": 6,
+      "get_hotels_address": 3,
+      "create_calendar_event": 2,
+      "get_all_restaurants_in_city": 12,
+      "get_all_hotels_in_city": 12,
+      "send_email": 1,
+      "get_rating_reviews_for_restaurants": 5,
+      "get_dietary_restrictions_for_all_restaurants": 1,
+      "get_cuisine_type_for_restaurants": 2,
+      "check_restaurant_opening_hours": 4,
+      "get_price_for_restaurants": 2,
+      "get_restaurants_address": 1,
+      "get_all_car_rental_companies_in_city": 7,
+      "get_rating_reviews_for_car_rental": 12,
+      "get_car_types_available": 5,
+      "get_car_fuel_options": 6,
+      "get_car_price_per_day": 4,
+      "get_flight_information": 1
+    }
+  },
+  "conclusion": "A",
+  "conclusion_text": "A: send_email 在 travel 正常任务中出现 ≥1 次 → 可补正例"
+}
